@@ -23,6 +23,7 @@ int main() {
 
     int acertou = 0;
 
+    //selecionando o nível 
     int nivel;
     printf("Qual o nível de dificuldade? \n");
     printf("1 - fácil; 2 - médio; 3 - difícil \n\n");
@@ -47,7 +48,7 @@ int main() {
         break;
     }
 
-
+    //limitando o numero de tentativas
     for(int i = 1; i <= numerodetentativas; i++) {
 
         printf("Tentativa %d\n", tentativas);
@@ -71,6 +72,7 @@ int main() {
             break;
         }
 
+    //feedback se o chute foi maior ou menor que o número secreto
         else if(maior) {
             printf("Seu chute foi maior que o número secreto\n");
         } 
@@ -81,8 +83,9 @@ int main() {
 
         tentativas++;
 
-        double pontosPerdidos = abs(chute - numerosecreto) / 2;
-             pontos = pontos -  pontosPerdidos;
+    //sistema de pontuação pode ser utilizado
+        // double pontosPerdidos = abs(chute - numerosecreto) / 2;
+        //      pontos = pontos -  pontosPerdidos;
      }
 
 
